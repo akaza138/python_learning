@@ -10,3 +10,14 @@ except Exception:
 # finally block always exceute
 finally:
     print("Error handled or output is arrived")
+'''
+Exception	Cause
+ZeroDivisionError	Dividing by zero
+ValueError	Right type, wrong value (int("abc"))
+TypeError	Wrong type ("a" + 1)
+IndexError	List index out of range
+KeyError	Missing dictionary key
+FileNotFoundError	File doesn’t exist
+AttributeError	Object has no such attribute
+NameError
+'''

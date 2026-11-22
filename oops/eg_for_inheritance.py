@@ -2,22 +2,24 @@
 # to get parent from the differnt file or differen location
 from inheritance import dad
 # multilevel inheritance
-class son(dad):
+class son2(dad):
     print("This is the child class")
-    def house(self):
+    def nothing(self):
         print("color : black , size : 1500 sq ft , location : New York and this is the child class method")
 
 s1=son()
 s1.house()
 s1.car()
 
-class cousin(son):
+class cousin(son,son2):
     def new_property(self):
-        print("This is the cousin class and this is the new property method")   
+        print("This is the cousin class and this is the new property method")  
+
 s2=cousin()
 s2.new_property()
 s2.house()
 s2.car()
+s2.house
 
 
 # mulptiple inheritance

@@ -1,0 +1,12 @@
+'''
+CALL BACK FUNCTION:
+THE CALL BACK FUNCTION IS THE FUNCTION THAT YOU PASS AS AN ARGUMENT TO THE ANOTHER FUNCTION.SO IT 
+CAN BE CALLED OR EXECUTED LATER ,USUALLY AFTER SOME ACTION IS COMPLETED 
+'''
+def button(callback):
+    print ("BUTTON CLICKED")
+    callback()
+def show():
+    print("the call back is executed")
+
+button(show)

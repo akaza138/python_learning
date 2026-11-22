@@ -34,7 +34,7 @@ class another_class():
         print(p._protected_variable)
         #print(p.__private_variable) # this will give an error because private variable is not accessible from another class
         try:
-            print(p.__private_variable)
+            print(p._parent__private_variable)
         except AttributeError:
             print("Private variable is not accessible from another class")
 p = parent()

@@ -1,0 +1,10 @@
+#PARTIALLY APPLIED FUNCTION
+# IN PARIAL FUNCTION WE CAN SET THE ARGUMENT OF THE FUNCTION PREDEFIND INSEAD OF UNSING THE SAME VALUE TO CALL THE FUNCTION
+#EG : IN THIS PROBLEM THE GST SHOULD BE REMAIN CONSANT 
+from functools import partial
+def cal(price,tax):
+    return price*(1+tax)
+
+p_w_gst=partial(cal,tax=0.18)
+
+print(p_w_gst(2356789))
